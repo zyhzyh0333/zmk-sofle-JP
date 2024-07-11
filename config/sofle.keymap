@@ -12,7 +12,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bootloader>;
-            label = "FLASH_MACRO";
         };
     };
 
@@ -29,7 +28,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            label = "Qwery";
+            display-name = "Qwery";
         };
 
         Flash {
@@ -40,6 +39,8 @@
 &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+            
+            display-name = "Flash";
         };
     };
 };
