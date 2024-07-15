@@ -35,12 +35,6 @@
             ;
     };
 
-    &left_encoder {
-		a-gpios = <&gpio1 10 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>;
-		b-gpios = <&gpio1 14 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>;
-        status = "okay";
-    };
-
     ext-power {
         compatible = "zmk,ext-power-generic";
         label = "EXT_POWER";
@@ -54,3 +48,8 @@
 
 };
 
+&left_encoder {
+		a-gpios = <&gpio1 10 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>;
+		b-gpios = <&gpio1 14 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>;
+        status = "okay";
+};
