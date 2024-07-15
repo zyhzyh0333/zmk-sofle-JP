@@ -49,7 +49,7 @@
 };
 
 &left_encoder {
-		a-gpios = <&gpio1 10 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>;
-		b-gpios = <&gpio1 14 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>;
-        status = "okay";
+	a-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+	b-gpios = <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    status = "okay";
 };
