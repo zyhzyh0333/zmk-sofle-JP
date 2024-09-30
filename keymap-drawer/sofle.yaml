@@ -160,8 +160,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
-  - EP OFF
-  - EP ON
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
