@@ -9,6 +9,7 @@
 /{
     chosen {
         zmk,battery = &vbatt;
+        zmk,backlight = &backlight;
     };
 
     kscan0: kscan {
