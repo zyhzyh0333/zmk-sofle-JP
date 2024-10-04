@@ -47,6 +47,12 @@
         compatible = "zmk,battery-nrf-vddh";
   //      init-delay-ms = <50>;
     };
+backlight: pwmleds {
+        compatible = "pwm-leds";
+        pwm_led_0 {
+            pwms = <&pwm0 0 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
+        };
+    };
 
 };
 &default_transform {
@@ -89,4 +95,10 @@
             low-power-enable;
         };
     };
+};
+&pwm0 {
+    status = "okay";
+    pinctrl-0 = <&pwm0_default>;
+    pinctrl-1 = <&pwm0_sleep>;
+    pinctrl-names = "default", "sleep";
 };
