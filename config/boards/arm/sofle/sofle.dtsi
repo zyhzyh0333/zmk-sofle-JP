@@ -23,6 +23,7 @@
         zephyr,console = &cdc_acm_uart;
         zmk,underglow = &led_strip;
         zmk,matrix-transform = &default_transform;
+        zmk,backlight = &backlight;
     };
 
 	left_encoder: encoder_left {
