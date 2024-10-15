@@ -70,9 +70,10 @@ backlight: pwmleds {
     };
     pwm0_sleep: pwm0_sleep {
         group1 {
-            psels = <NRF_PSEL(PWM_OUT0, 1, 13)>;
+      //      psels = <NRF_PSEL(PWM_OUT0, 1, 13)>;
+ control-gpios = <&gpio1 13 GPIO_PULL_DOWN>;
             low-power-enable;
-         control-gpios = <&gpio1 13 GPIO_PULL_DOWN>;
+        
         };
     };
 };
