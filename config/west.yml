@@ -8,8 +8,6 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
     - name: gpeye
       url-base: https://github.com/GPeye
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
   projects:
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
@@ -18,8 +16,8 @@ manifest:
       remote: gpeye
       revision: main 
     - name: zmk
-      remote: petejohanson
-      revision: feat/pointers-with-input-processors
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
