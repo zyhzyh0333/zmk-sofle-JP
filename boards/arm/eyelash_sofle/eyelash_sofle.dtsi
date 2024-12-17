@@ -23,9 +23,8 @@
         zmk,kscan = &kscan0;
         zmk,battery = &vbatt;
         zmk,underglow = &led_strip;
-        zmk,physical-layout = &default_layout;
-        zmk,backlight = &backlight;
         zmk,physical-layout = &eyelash_sofle_layout;
+        zmk,backlight = &backlight;
     };
 
 	left_encoder: encoder_left {
