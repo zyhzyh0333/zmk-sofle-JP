@@ -1,5 +1,5 @@
 - [中文](README.md)
-- [英文](README_EN.md)
+- [English](README_EN.md)
 
 # 更新列表
 
